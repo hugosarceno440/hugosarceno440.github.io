@@ -54,7 +54,7 @@
         .social-links {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 10px; /* Reducir el espacio entre los botones */
             width: 100%;
             max-width: 300px;
         }
@@ -64,12 +64,15 @@
             align-items: center;
             text-decoration: none;
             color: white;
-            font-size: 1rem;
-            padding: 10px 20px;
+            font-size: 0.9rem; /* Reducir el tamaño de la fuente */
+            padding: 6px 12px; /* Reducir el padding */
             border: 2px solid white;
             border-radius: 25px;
             transition: all 0.3s;
             background-color: transparent;
+            width: 170px; /* Establecer un ancho fijo para los botones */
+            justify-content: center; /* Centrar el contenido */
+            margin: 0 auto; /* Centrar los botones */
         }
 
         .social-links a span {
@@ -78,9 +81,9 @@
         }
 
         .social-links a img {
-            width: 24px; /* Ajusta este valor para cambiar el tamaño del logo */
-            height: 24px; /* Ajusta este valor para cambiar el tamaño del logo */
-            margin-right: 1px; /* Espacio entre el logo y el texto */
+            width: 20px; /* Ajustar el tamaño del logo */
+            height: 20px; /* Ajustar el tamaño del logo */
+            margin-right: 8px; /* Espacio entre el logo y el texto */
         }
 
         .social-links a:hover {
@@ -98,8 +101,9 @@
             }
 
             .social-links a {
-                font-size: 0.9rem;
-                padding: 8px 15px;
+                font-size: 0.8rem; /* Reducir aún más el tamaño de la fuente en dispositivos móviles */
+                padding: 6px 12px; /* Reducir el padding en dispositivos móviles */
+                width: 130px; /* Hacer los botones aún más estrechos en dispositivos móviles */
             }
 
             .profile-image {
@@ -108,8 +112,8 @@
             }
 
             .social-links a img {
-                width: 20px; /* Ajusta para dispositivos móviles */
-                height: 20px; /* Ajusta para dispositivos móviles */
+                width: 18px; /* Ajustar para dispositivos móviles */
+                height: 18px; /* Ajustar para dispositivos móviles */
             }
         }
     </style>
