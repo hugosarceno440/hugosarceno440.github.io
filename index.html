@@ -1,13 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hugo Sarceño</title>
     <style>
         body {
             margin: 0;
-            
             background-image: url('Fondo.jpg'); /* Reemplaza con la URL de la imagen de fondo */
             background-size: cover;
             background-position: center;
@@ -26,26 +28,9 @@
             backdrop-filter: blur(5px);
         }
 
-
-
-        .Alcalde{
-            font-family:Poppins Medium ; 
-        }
-
-         .demastexto{
-            font-family: Poppins; 
-        }
-
-
-         .redb{
-            font-family: Poppins; 
-            font-size: 10;
-        }
-
-
         .profile-image {
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
             overflow: hidden;
             border: 4px solid white;
@@ -60,20 +45,35 @@
 
         h1 {
             font-size: 2.5rem;
-            margin-bottom: 1px;
+            margin-bottom: 5px; /* Reducir el margen inferior */
         }
 
         h2 {
-            font-size: 1.3rem;
-            margin-top: 0.5px;
+            font-size: 1.5rem;
+            margin-top: 5px; /* Reducir el margen superior */
+            margin-bottom: 10px; /* Reducir el margen inferior */
+        }
+
+        .image-below-h1 {
+            width: 40%; /* Puedes ajustar el tamaño de la imagen aquí */
+            max-width: 370px; /* Ajusta el tamaño máximo */
+            margin-top: 1px;  /* Reducir el margen superior */
+            margin-bottom: 1px;  /* Reducir el margen inferior */
+        }
+
+        .image-below-h1 img {
+            width: 100%;  /* Imagen ocupa todo el ancho del contenedor */
+            height: auto;  /* Mantiene la proporción de la imagen */
+            border-radius: 8px; /* Puedes modificar esto para dar bordes redondeados a la imagen */
         }
 
         .social-links {
             display: flex;
             flex-direction: column;
-            gap: 10px; /* Reducir el espacio entre los botones */
+            gap: 10px;
             width: 100%;
             max-width: 300px;
+            margin-top: 5px; /* Ajustar el margen superior de los botones */
         }
 
         .social-links a {
@@ -81,26 +81,26 @@
             align-items: center;
             text-decoration: none;
             color: white;
-            font-size: 0.9rem; /* Reducir el tamaño de la fuente */
-            padding: 12px 24px; /* Reducir el padding */
+            font-size: 1.5rem;
+            padding: 12px 24px;
             border: 4px solid white;
             border-radius: 25px;
             transition: all 0.3s;
             background-color: transparent;
-            width: 220px; /* Establecer un ancho fijo para los botones */
-            justify-content: center; /* Centrar el contenido */
-            margin: 0 auto; /* Centrar los botones */
+            width: 220px;
+            justify-content: center;
+            margin: 0 auto;
         }
 
         .social-links a span {
-            flex-grow: 3; /* Esto hace que el texto ocupe el espacio disponible */
-            text-align: center; /* Centra el texto */
+            flex-grow: 3;
+            text-align: center;
         }
 
         .social-links a img {
-            width: 30px; /* Ajustar el tamaño del logo */
-            height: 30px; /* Ajustar el tamaño del logo */
-            margin-right: 8px; /* Espacio entre el logo y el texto */
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
         }
 
         .social-links a:hover {
@@ -110,54 +110,121 @@
 
         @media (max-width: 768px) {
             h1 {
-                font-size: 1.5rem;
+                font-size: 2.5rem;
             }
 
             h2 {
-                font-size: 1rem;
+                font-size: 2srem;
             }
 
             .social-links a {
-                font-size: 1rem; /* Reducir aún más el tamaño de la fuente en dispositivos móviles */
-                padding: 6px 12px; /* Reducir el padding en dispositivos móviles */
-                width: 160px; /* Hacer los botones aún más estrechos en dispositivos móviles */
+                font-size: 1.5rem;
+                padding: 6px 12px;
+                width: 200px;
             }
 
             .profile-image {
-                width: 190px;
-                height: 190px;
+                width: 250px;
+                height: 250px;
             }
 
             .social-links a img {
-                width: 30px; /* Ajustar para dispositivos móviles */
-                height: 30px; /* Ajustar para dispositivos móviles */
+                width: 30px;
+                height: 30px;
             }
+
+            .image-below-h1 {
+                width: 100%; /* La imagen ocupa todo el ancho disponible en pantallas pequeñas */
+                max-width: 380px;
+            }
+        }
+        .poppins-thin {
+            font-family: "Poppins", serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        .poppins-extralight {
+            font-family: "Poppins", serif;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        .poppins-light {
+            font-family: "Poppins", serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .poppins-regular {
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .poppins-medium {
+            font-family: "Poppins", serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .poppins-semibold {
+            font-family: "Poppins", serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .poppins-bold {
+            font-family: "Poppins", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .poppins-extrabold {
+            font-family: "Poppins", serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .poppins-black {
+            font-family: "Poppins", serif;
+            font-weight: 900;
+            font-style: normal;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="profile-image">
-            <img src="hugofoto.jpg" alt="Hugo Sarceño"> <!-- Reemplaza con la URL de la foto de perfil -->
+            <img src="hugofoto.jpg" alt="Hugo Sarceño">
         </div>
-        <h1 class="demastexto">Hugo Sarceño</h1>
-        <h2 class="Alcalde">Alcalde de Puerto Barrios</h2>
+
+        <div class="image-below-h1">
+            <img src="marca-sarceno1.png" alt="Imagen descriptiva"> <!-- Reemplaza con la URL de tu imagen -->
+        </div>
+
+        <!-- <h1 class="poppins-bold">Hugo Sarceño</h1> -->
+        <h2 class="poppins-medium">Alcalde de Puerto Barrios</h2>
+
+        <!-- Imagen debajo de h1 -->
+        
+
         <div class="social-links">
             <a href="https://www.facebook.com/HugoSarcenoOrellana?mibextid=ZbWKwL" target="_blank">
-                <img src="facebook.png" alt=""> <!-- Reemplaza con la URL del logo de Facebook -->
-                <span class="redb">Facebook</span>
+                <img src="facebook.png" alt="">
+                <span class="poppins-bold">Facebook</span>
             </a>
             <a href="https://www.tiktok.com/@440_hugo?is_from_webapp=1&sender_device=pc" target="_blank">
-                <img src="tiktok.png" alt=""> <!-- Reemplaza con la URL del logo de TikTok -->
-                <span class="redb">TikTok</span>
+                <img src="tiktok.png" alt="">
+                <span class="poppins-bold">TikTok</span>
             </a>
             <a href="https://www.instagram.com/hugosarceno43?igsh=a3lkaWRnZ3c0b3Fp" target="_blank">
-                <img src="insta.png" alt=""> <!-- Reemplaza con la URL del logo de Instagram -->
-                <span class="redb">Instagram</span>
+                <img src="insta.png" alt="">
+                <span class="poppins-bold">Instagram</span>
             </a>
-            <a href="https://x.com/SARCENOH " target="_blank">
-                <img src="x.png" alt=""> <!-- Reemplaza con la URL del logo de X -->
-                <span class="redb">X</span>
+            <a href="https://x.com/SARCENOH" target="_blank">
+                <img src="x.png" alt="">
+                <span class="poppins-bold">X</span>
             </a>
         </div>
     </div>
